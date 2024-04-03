@@ -1,16 +1,16 @@
 function Calc(){
     // Get value from User..
-    const cm = document.getElementById('input').value  
-    const klg = document.getElementById('input1').value
+    const Height = document.getElementById('input').value  
+    const weight = document.getElementById('input1').value
 
     // 2time squre in user Heigth..
-    let cm_Sqr = cm*cm;
+    let cm_Sqr = Height*Height;
 
     // Convert to Whole Number..
-    let math = Math.floor(klg/cm_Sqr*10000);
+    let math = Math.floor(weight/cm_Sqr*10000);
 
     // Give a Condition to Check Body Health..
-    if(cm.length == " " && klg.length == " "){
+    if(Height.length == " " && weight.length == " "){
         alert("Enter your Details in the input box")
     }
     else{
